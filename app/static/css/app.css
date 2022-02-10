@@ -4,7 +4,7 @@ body {
 
 
 h1{
-    font-size: larger;
+    font-size: large;
     color:grey;
     font-weight:600;
     text-shadow: 1px 1px;
@@ -13,46 +13,63 @@ h1{
 p{
     color:grey;
     font-weight:400;
+    margin:.5em;
 }
 
 img{
-    height:57%;
+    height:55%;
     width:30%;
     filter:contrast(120%);
+    border-radius:50%;
+}
+
+button{
+    margin:10px;
+    background-color:rgb(126,211,33);
+    padding: 6px 40px;
+    border-radius:8px;
+    color:white;
+    font-weight:600;
+    border:none;
 }
 
 #about{
     color:grey;
-    font-size:16px;
+    font-size:15px;
     font-style:italic;
 }
 
+
+.outer{
+    display:flex;
+    flex-direction: row;
+    margin:0;
+    justify-content: center;
+}
+
+.inner{
+    text-align: center;
+    padding:0px 20px;
+    width:120px;
+}
+
+.num{
+    font-weight:bold;
+    color:black;
+}
+
 .Top{
+    box-sizing: border-box;
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(247, 202, 201));
     height:250px;
     width:500px;
     text-align:center;
-    padding:10px;
+    padding:5px;
     border-radius:10px 10px 0px 0px;
 }
 
-.Text{
-    padding-left:70px;
-    padding-right:70px;
-    display: flex;
-    flex-direction:row;
-    justify-content:space-evenly;
-}
-
-.Number{
-    padding-left:50px;
-    padding-right:70px;
-    display: flex;
-    flex-direction:row;
-    justify-content:space-evenly;
-}
-
 .Bot{
+    box-sizing: border-box;
     padding-top:10px;
     padding-left:40px;
     padding-right:40px;
@@ -61,22 +78,4 @@ img{
     text-align: center;
     border:1px solid grey;
     border-radius:0px 0px 10px 10px;
-}
-
-button{
-
-    background-color:rgb(126,211,33);
-    padding: 4px 28px;
-    border-radius:8px;
-    color:white;
-    font-weight:600;
-    border:none;
-}
-
-img{
-    border-radius:50%;
-}
-
-section.Number > p{
-    font-weight:bold;
 }
