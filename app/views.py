@@ -14,7 +14,7 @@ from datetime import date
 # Routing for your application.
 ###
 def format_date_joined(a = date.today()):
-    return "Joined " + a.strftime('%m/%y')
+    return "Joined " + a.strftime('%B, %Y')
 
 @app.route('/')
 def home():

@@ -10,7 +10,7 @@ h1{
     text-shadow: 1px 1px;
 }
 
-p{
+p{  
     color:grey;
     font-weight:400;
     margin:.5em;
@@ -39,6 +39,11 @@ button{
     font-style:italic;
 }
 
+#info{
+    font-size:15px;
+    font-style:italic;
+}
+
 
 .outer{
     display:flex;
@@ -56,6 +61,12 @@ button{
 .num{
     font-weight:bold;
     color:black;
+    margin:0em;
+}
+
+.text{
+    margin-top:0em;
+    margin-bottom:.5em;
 }
 
 .Top{
@@ -79,3 +90,4 @@ button{
     border:1px solid grey;
     border-radius:0px 0px 10px 10px;
 }
+
